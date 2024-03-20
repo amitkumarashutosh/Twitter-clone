@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "6544a4ba-758c-47c6-90fa-029358568c66",
+		"name": "Twitter Clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29978583"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"amit\",\r\n    \"username\":\"amit\",\r\n    \"email\":\"amit@gmail.com\",\r\n    \"password\":\"amit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/logout",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Bookmarks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/bookmarks/65f91c3a07ceff24a15a1698",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"bookmarks",
+								"65f91c3a07ceff24a15a1698"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"amit@gmail.com\",\r\n    \"password\":\"amit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Other Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/otherUser",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"otherUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/follow/65f91c4c07ceff24a15a169a",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"follow",
+								"65f91c4c07ceff24a15a169a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/allTweets",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"allTweets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/profile",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/unFollow/65f91c4c07ceff24a15a169a",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"unFollow",
+								"65f91c4c07ceff24a15a169a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Following Tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/followingTweets",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"followingTweets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tweet",
+			"item": [
+				{
+					"name": "Delete tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tweets/65f90f803e016ab989993f5e",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tweets",
+								"65f90f803e016ab989993f5e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Dislike",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tweets/65f91c3a07ceff24a15a1698",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tweets",
+								"65f91c3a07ceff24a15a1698"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create tweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"improving my twitter clone\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/tweets",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tweets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
